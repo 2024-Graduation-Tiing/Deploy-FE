@@ -38,7 +38,7 @@ export default function Profile() {
 
   return (
     // <Suspense fallback={<h1>Load Data...</h1>}>
-    <section ref={containerRef} className="grid grid-cols-9">
+    <section ref={containerRef} className="grid grid-cols-9 mt-6">
       {/* 대표 프로필 이미지 섹션 */}
       <div ref={imageRef} className="aspect-3/4 col-span-4">
         <ProfileImage

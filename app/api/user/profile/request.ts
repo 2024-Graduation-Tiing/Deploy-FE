@@ -3,12 +3,10 @@ import { cookies } from 'next/headers';
 import { getCookies } from 'cookies-next';
 import fetchUserDataServer from '@/utils/fetchUserDataServer';
 
-// const url = '/api/user/profile';
 export async function getProfile() {
   // const token = getCookies({ cookies });
   // const data = await fetchUserDataServer(token.accessToken as string);
-  const url = `/api/user/profile`;
-  const res = await fetch(url, {
+  const res = await fetch('api/user/profile', {
     method: 'GET',
   });
 
@@ -22,3 +20,9 @@ export async function getProfile() {
 //     // body: params,
 //   });
 // }
+
+export async function updateProfile(params: type) {
+  const res = await fetch(url, {
+    method: 'PUT',
+  });
+}
